@@ -1,0 +1,40 @@
+.first {
+    background: linear-gradient(to right bottom,  #5958ff, #4744d5);
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.content {
+    max-width: 60%;
+    font-size: 1.6em;
+    font-weight: 800;
+    padding: 20px 20px 20px 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.second {
+    margin-top: 30px;
+}
+
+.card {
+    min-height: 300px;
+}
+
+.section-title {
+    font-size: 35px;
+    text-align: center;
+}
+
+.section:last-child {
+    margin-bottom: 100px;
+}
