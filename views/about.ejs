@@ -6,7 +6,7 @@
     <title>Bit Link</title>
 </head>
 <body>
-<%- include components/navbar.ejs %>
+<%- include('components/navbar.ejs', {page: "about"}) %>
 <div class="section title-container">
     <div class="content">
         <h1>About</h1>
@@ -14,8 +14,9 @@
 </div>
 <div class="section main-content">
     <div class="maxed-width-container">
-        <h2>Some Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur vel turpis vel semper. Suspendisse enim tortor, blandit id molestie nec, blandit eu ligula.</p>
+        <h2>Creators</h2>
+        <h3>Josh Brown</h3>
+        <p>My name is Josh Brown. I'm a 17 year old High School student. Check my website out <a target="_blank" href="https://joshbrown.info">here</a>. </p>
     </div>
 </div>
 </body>

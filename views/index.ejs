@@ -6,7 +6,7 @@
     <title>Bit Link</title>
 </head>
 <body>
-<%- include components/navbar.ejs %>
+<%- include('components/navbar.ejs', {page: "home"}) %>
 <div class="section first">
     <div class="content">
         <h2 class="big-words">A new open source video conference tool keeping you connected when you need it most.</h2>
@@ -18,17 +18,22 @@
         <h2 class="section-title">Features</h2>
         <div class="cards-stack">
             <div class="card">
+                <h3 class="card--title">Unlimited Meeting Time</h3>
+                <p class="card--content">We currently do not cap meeting times. A meeting host will be prompted every 2
+                    hours if they would like to continue to extend their meeting.</p>
+            </div>
+            <div class="card">
+                <h3 class="card--title">Robust Chat System</h3>
+                <p class="card--content">BitLink has a robust integrated chat system. Participants can send messages individually or to
+                    all participants. Participants can react with a thumbs up or a thumbs down to messages. Participants can edit and delete messages as
+                    needed. All of these functions can be enabled and disabled by the host.</p>
+            </div>
+            <div class="card">
                 <h3 class="card--title">Open Source</h3>
-                <p class="card--content">BitLink is a fully open source program. You can view our code on GitHub by clicking
+                <p class="card--content">BitLink is a fully open source program. You can view our code on GitHub by
+                    clicking
                     the button below.</p>
-            </div>
-            <div class="card">
-                <h3 class="card--title">Second Feature</h3>
-                <p class="card--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur vel turpis vel semper. Suspendisse enim tortor, blandit id molestie nec, blandit eu ligula.</p>
-            </div>
-            <div class="card">
-                <h3 class="card--title">A Third Feature</h3>
-                <p class="card--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur vel turpis vel semper. Suspendisse enim tortor, blandit id molestie nec, blandit eu ligula.</p>
+                <a href="https://github.com/oos-videochat" target="_blank"><button class="big-button">GitHub</button></a>
             </div>
         </div>
     </div>
