@@ -23,6 +23,7 @@
     padding: 0;
     list-style: none;
     display: flex;
+    align-items: center;
     color: white;
     font-size: 16px;
     text-transform: uppercase;
@@ -50,12 +51,12 @@
     color: #eeeeee;
 }
 
-.top--nav ul li:hover:after {
+.top--nav ul li.hover-underline:hover:after {
     color: #eeeeee;
     width: 100%;
 }
 
-.top--nav ul li.active:after {
+.top--nav ul li.hover-underline.active:after {
     width: 100%;
 }
 
@@ -69,6 +70,12 @@
     font-weight: 700;
     display: block;
     height: 100%;
+}
+
+.top--nav ul li a.highlighted {
+    padding: 10px;
+    background-color: #00d79a;
+    border-radius: 20px;
 }
 
 .hamburger-wrapper {

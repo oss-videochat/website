@@ -21,9 +21,14 @@ body {
     }
 }
 
+a {
+    color: #4744d5;
+}
+
 .big-button {
     font-size: 0.8em;
     padding: 13px 30px;
+    margin: 10px;
     border-radius: 50px;
     background: #4744d5;
     border: none;
@@ -41,10 +46,10 @@ body {
 .big-button.green {
     background: #00d79a;
 }
+
 .big-button.green:hover {
     background: #00e5a5;
 }
-
 
 .maxed-width-container {
     max-width: 1500px;
