@@ -6,8 +6,13 @@ router.get('/', function (req, res, next) {
     res.render('index');
 });
 
+
 router.get('/about', function (req, res, next) {
     res.render('about');
+});
+
+router.get('/privacy', function (req, res, next) {
+    res.render('privacy');
 });
 
 router.get(['/download/:platform?'], function (req, res, next) {
