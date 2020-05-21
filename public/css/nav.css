@@ -36,7 +36,7 @@
     -webkit-user-select: none;
 }
 
-.top--nav ul li:after {
+.top--nav ul li a:after {
     content: " ";
     height: 3px;
     width: 0;
@@ -51,12 +51,12 @@
     color: #eeeeee;
 }
 
-.top--nav ul li:hover:after {
+.top--nav ul li a:hover:after {
     color: #eeeeee;
     width: 100%;
 }
 
-.top--nav ul li.active:after {
+.top--nav ul li.active a:after {
     width: 100%;
 }
 
@@ -97,7 +97,10 @@
 
     .top--nav ul li{
         display: block;
-        margin: 10px 0 ;
+        margin: 10px 0;
+    }
+    .top--nav ul li a {
+        display: inline-block;
     }
 
 
