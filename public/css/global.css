@@ -4,6 +4,7 @@
 body {
     margin: 0;
     font-size: 15px;
+    min-width: 320px;
     color: #151948;
     background: #fbfbfb;
     font-family: 'Lato', sans-serif;
