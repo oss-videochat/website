@@ -1,0 +1,19 @@
+.cardsStack {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+@media screen and (max-width: 1200px) {
+    .cardsStack {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .cardsStack {
+        flex-direction: column;
+        align-items: center;
+    }
+}

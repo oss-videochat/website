@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 15px;
+    color: #151948;
+    background: #fbfbfb;
+    font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+}

@@ -1,9 +1,3 @@
-.cards-stack {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-}
-
 .card {
     flex-basis: 33.33333%;
     max-width: 350px;
@@ -15,37 +9,41 @@
     transition: transform 300ms;
 }
 
-.card .big-button {
+/*.card .big-button {
     margin-top: 30px;
     font-size: 1.2em;
 }
-
+*/
 
 .card:hover {
     transform: translateY(-10px);
 }
 
-.card--title {
+.cardTitle {
     font-size: 1.7em;
     text-align: center;
 }
 
-.card--content {
+.cardContent {
     line-height: 2;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        flex-basis: 50%;
+        margin: 30px 10px 10px;
+        max-width: 300px;
+    }
 }
 
 
 @media screen and (max-width: 800px) {
-    .cards-stack {
-        flex-direction: column;
-        align-items: center;
-    }
     .card {
         width: 100%;
         margin: 30px 10px 10px;
         max-width: 300px;
     }
-    .card--content {
+    .cardContent {
         font-size: 1.4em;
     }
     .card:hover {
