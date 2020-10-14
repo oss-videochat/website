@@ -17,6 +17,7 @@ interface NavBarProps {
 
 export const NavBar: React.FunctionComponent<NavBarProps> = ({page}) => {
     const [scrolled, setScrolled] = useState(false);
+    const [open, setOpen] = useState(false);
 
     useEffect(() => {
         function scroll(e: Event) {
@@ -30,8 +31,8 @@ export const NavBar: React.FunctionComponent<NavBarProps> = ({page}) => {
         <div className={cn(styles.topBar, {[styles.scrolled]: scrolled})}>
             <div className={styles.topWrapper}>
                 <a href="/"><img className={styles.logo} src="/assets/images/bitlinklogo-alt.svg"/></a>
-                <div className={styles.hamburgerWrapper}><FontAwesomeIcon icon={faBars}/></div>
-                <nav className={styles.topNav}>
+                <div onClick={() => setOpen(!open)} className={styles.hamburgerWrapper}><FontAwesomeIcon icon={faBars}/></div>
+                <nav className={cn(styles.topNav, {[styles.active]: open})}>
                     <ul>
                         <li className={page === NavBarPage.HOME ? styles.active : ""}><Link
                             href={"/"}><a>Home</a></Link></li>

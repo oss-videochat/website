@@ -80,7 +80,6 @@
 
 @media screen and (max-width: 800px) {
     .topNav {
-        display: none;
         position: absolute;
         width: 100%;
         background: #4744d5;
@@ -89,6 +88,13 @@
         top: 80px;
         left: 0;
         text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 200ms;
+    }
+    .topNav.active {
+        pointer-events: auto;
+        opacity: 1;
     }
 
     .topNav ul {
