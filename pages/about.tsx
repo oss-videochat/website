@@ -19,22 +19,10 @@ export default function About() {
             <div className={styles.bottom}>
                 <MaxWidthContainer>
                     <h2>About</h2>
-                    <p>BitLink is an open source video conferencing program. It runs completely in browser on both mobile and desktop devices meaning no download or setup is necessary.</p>
-                    <h2>BitLink {">"} Zoom</h2>
-                    <ul>
-                        <li>BitLink is open source</li>
-                        <li>BitLink is more performant than Zoom</li>
-                    </ul>
-                    <h2>BitLink {">"} Jitsi</h2>
-                    <ul>
-                        <li>BitLink is more performant than Jitsi</li>
-                        <li>Supports virtual background</li>
-                        <li>Virtual background and background blur work in nearly real time in BitLink while lagging in Jitsi</li>
-                        <li>Less bloated</li>
-                    </ul>
+                    <p>BitLink is an open source video conferencing program. It runs completely in browser on both mobile and desktop devices. No download, installation, or setup is necessary.</p>
                     <h2>Creator</h2>
                     <h3>Josh Brown</h3>
-                    <p>My name is Josh Brown. I'm a 17 year old High School student. Check my website out <a target="_blank" href="https://joshbrown.info">here</a>. </p>
+                    <p>My name is Josh Brown. I'm an 18 year old High School student. Check my website out <a target="_blank" href="https://joshbrown.info">here</a>. </p>
                 </MaxWidthContainer>
             </div>
         </>
