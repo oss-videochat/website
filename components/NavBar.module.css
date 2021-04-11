@@ -1,7 +1,7 @@
 .topBar {
     position: fixed;
     z-index: 100;
-    top: 0;
+    top: 45px;
     width: 100%;
     height: 80px;
     transition: background-color 500ms;
@@ -118,4 +118,18 @@
         display: block;
 
     }
+}
+
+.alertMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ff8167;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    height: 45px;
+    z-index: 20;
 }
